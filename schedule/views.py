@@ -13,9 +13,9 @@ def schedule_list(request):
 def group_schedule(request, fac, pk):
 
     data = ''
-    dump = json.dumps({ 'error': 'error'})
+    dump = json.dumps({'error': 'error'})
     try:
-        data = json.load(open(fac+'.json'))
+        data = json.load(open('static/'+fac+'.json'))
     except:
     	logger.error(fac + ' No such faculty!')
 
