@@ -2,7 +2,7 @@ from django.shortcuts import render
 import os
 from django.conf import settings
 from django.http import HttpResponse
-from wsgiref.util import FileWrapper
+from django.http import Http404
 
 def download(request, file):
     file_path = "static/" + file
