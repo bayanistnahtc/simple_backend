@@ -20,4 +20,5 @@ from django.urls import path
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'', include('schedule.urls')),
+    url(r'', include('mhelp.urls')),
 ]
